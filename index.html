@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--ICONO PESTAÑA-->
+        <link rel="icon" href="img/carrva_icon_01.svg">
+        <!--NOMBRE PESTAÑA-->
+        <title>Carrva Transportes</title>
+        <!--ESTILOS CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/inicio.css">
+        <link rel="stylesheet" href="css/reservar.css">
+        <link rel="stylesheet" href="css/tarifas.css">
+        <link rel="stylesheet" href="css/nosotros.css">
+        <link rel="stylesheet" href="css/contacto.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/slideshow.css">
+        <link rel="stylesheet" href="css/form.css">
+        <!--ICONOS-->
+        <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    </head>
+    <body>
+        <!--PAGINA INICIO-->
+        <section class="main" id="inicio">
+            <nav>
+                <!--LOGO-->
+                <a href="#" class="logo">
+                    <img src="img/carrva_logo_01.svg">
+                </a>
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label class="menu-icon" for="menu-btn">
+                    <span class="nav-icon"></span>
+                </label>
+                <!--MENU FIXED-->
+                <ul class="menu" id="menu">
+                    <li><a href="#inicio" class="btn">Inicio</a></li>
+                    <li><a href="#reservar" class="btn">Reservar</a></li>
+                    <li><a href="#tarifa" class="btn">Tarifa</a></li>
+                    <li><a href="#nosotros" class="btn">Nosotros</a></li>
+                    <li><a href="#contacto" class="btn">Contacto</a></li>
+                </ul>
+            </nav>
+            <!--CUADRO DE TEXTO-->
+            <div class="main-heading">
+                <h1>El mejor servicio de <span>transporte</span></h1>
+                <p class="details">Trasladamos desde y hacia el AEROPUERTO de Antofagasta.</p>
+            </div>
+            <!--GALERIA DE IMAGENES-->
+            <div class="wrapper">
+                <div class="slideshows">
+                  <div class="slideshow slideshow--hero">
+                    <div class="slides">
+                      <div class="slide slide1"></div>
+                      <div class="slide slide2"></div>
+                      <div class="slide slide3"></div>
+                    </div>
+                  </div>
+                  <div class="slideshow slideshow--contrast slideshow--contrast--before">
+                    <div class="slides">
+                      <div class="slide slide1"></div>
+                      <div class="slide slide2"></div>
+                      <div class="slide slide3"></div>
+                    </div>
+                  </div>
+                  <div class="slideshow slideshow--contrast slideshow--contrast--after">
+                    <div class="slides">
+                      <div class="slide slide1"></div>
+                      <div class="slide slide2"></div>
+                      <div class="slide slide3"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PAGINA RESERVAR-->
+        <section class="reservar" id="reservar">
+            <h1>Reservar</h1>
+            <p>-Estaremos en contacto-</p>
+            <!--FORMULARIO-->
+            <div class="form-style-8">
+                <form id="form" action="" class="form">
+                  <input type="text" name="name" placeholder="Nombre y apellido" required />
+                  <input type="email" name="email" placeholder="Correo electrónico" required />
+                  <input type="number" name="phone" placeholder="+56 9" required />
+                  <textarea name="description" placeholder="Servicio requerido:" required onkeyup="adjust_textarea(this)"></textarea>
+                  <input type="submit" value="Enviar" />
+                </form>
+                <a href="mailto:vicen33@gmail.com" id="truco"></a>
+              </div>
+        </section>
+
+        <!--PAGINA TARIFAS-->
+        <section class="tarifa" id="tarifa">
+            <div class="tarifa-heading">
+                <h1>Tarifa</h1>
+                <p>Para preguntar por servicios que no figuran en la lista, enviar solicitud de cotización a 
+                <b><a style="text-decoration: none; color: #3366FF;" href="mailto:vicen33@gmail.com">contacto</a></b>.
+                </p>
+                <p><i>Los precios dentro de la ciudad de Antofagasta están regulados por el Ministerio de Transporte y Telecomunicaciones.</i></p>
+            </div>
+            <!--TABLA-->
+            <div style="overflow-x:auto;" class="tarifa-tab">
+                <table style="width: 100%; min-width: 800px;">
+                  <tr>
+                    <th>Sector</th>
+                    <th>Región/Comuna</th>
+                    <th>Descripción</th>
+                    <th>Van H1</th>
+                  </tr>
+                  <tr>
+                    <td>Norte</td>
+                    <td>Antofagasta</td>
+                    <td>Aeropuerto hasta Nicolas Tirado</td>
+                    <td>$ 25.000</td>
+                  </tr>
+                  <tr>
+                    <td>Centro</td>
+                    <td>Antofagasta</td>
+                    <td>Nicolas Tirado hasta Antonio Poupin</td>
+                    <td>$ 30.000</td>
+                  </tr>
+                  <tr>
+                    <td>Centro Sur</td>
+                    <td>Antofagasta</td>
+                    <td>Antonio Poupin hasta Gran Vía</td>
+                    <td>$ 35.000</td>
+                  </tr>
+                  <tr>
+                    <td>Sur</td>
+                    <td>Antofagasta</td>
+                    <td>Gran Vía hasta Cerro Paranal</td>
+                    <td>$ 38.000</td>
+                  </tr>
+                  <tr>
+                    <td>Extremo Sur</td>
+                    <td>Antofagasta</td>
+                    <td>Cerro Paranal hasta Llacolén</td>
+                    <td>$ 41.000</td>
+                  </tr>
+                  <tr>
+                    <td>Parada Adicional (QTH)</td>
+                    <td>Antofagasta</td>
+                    <td>QTH Extra (10' de espera)</td>
+                    <td>$ 2.000</td>
+                  </tr>
+                </table>
+              </div>
+        </section>
+
+        <!--PAGINA NOSOTROS-->
+        <section class="nosotros" id="nosotros">
+            <!--IMAGEN-->
+            <div class="nosotros-img">
+                <img src="img/carrva_ds_01.svg">
+            </div>
+            <!--TEXTO-->
+            <div class="nosotros-text">
+                <h2>¿Quiénes somos?</h2>
+                <h3>Carrva Transportes</h3>
+                <p>Somos una empresa dedica al traslado de pasajeros dentro y fuera de Antofagasta. 
+                    Contamos con una vasta experiencia en el traslado de pasajeros, nos enfocamos 
+                    en la seguridad y puntualidad de nuestros servicios.</p>
+            </div>
+        </section>
+
+        <!--PAGINA CONTACTO-->
+        <section class="contacto" id="contacto">
+            <h1>Contacto</h1>
+            <!--ICONO-->
+            <div class="contacto-icon">
+                <a href="https://wa.me/+56958637657"><box-icon type='logo' name='whatsapp-square' size='lg' animation='tada-hover' class="ws"></box-icon></a>
+            </div>
+        </section>
+
+        <!--PIE DE PAGINA-->
+        <section class="pie">
+            <h4>Carrva&copy; 2021</h4>
+        </section>
+
+        <!--JAVASCRIPT-->
+        <script type="text/javascript" src="../js/scroll.js"></script>
+        <script type="text/javascript" src="../js/form.js"></script>
+        <script type="text/javascript" src="../js/css.js"></script>
+    </body>
+</html>
